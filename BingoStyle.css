@@ -29,14 +29,19 @@ p.clear {
 
 .header
 {
-  font-size: 5vw;
-  text-align: center;
-  margin-bottom: 4vh;
+  margin-bottom: 100px;
+  font-size: 4vw;
   font-family: 'Runescape UF';
-  padding-top: 30px;
-  padding-bottom: 40px;
-  text-shadow: 3px 3px black; 
+  padding: 10px;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  background-color: rgba(0,0,0,0.5);
+
 }
+
+
+
+
 .Bingo-code
 {
 font-family: 'Runescape UF';
@@ -46,11 +51,16 @@ text-shadow: 3px 3px black;
 }
 .teams-column
 {
+  
   float: left;
-  /*border-style: solid;*/
-  width: 30%;
-  padding-top: 30px;
+  margin-top: 200px;
+  border-style: solid;
+  width: auto;
+  
   text-shadow: 3px 3px black; 
+  background-color: rgba(0,0,0,0.5);
+  
+  
 }
 
 .info-column
@@ -58,12 +68,12 @@ text-shadow: 3px 3px black;
   background-image: url(./images/1.png);
   background-size: contain;
   background-repeat: no-repeat;
-
-  float: left;
+  
+  float: right;
   width: 30%;
   height: 40vh;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
   text-shadow: 3px 3px black; 
 }
 
@@ -113,7 +123,8 @@ button:hover
 
 .team-members
 {
-  padding-left: 3vw;
+  
+  padding-left: 5vw;
   font-size: 2vh;
   text-shadow: 3px 3px black; 
 }
@@ -124,7 +135,7 @@ button:hover
 {
   
   right: 0;
-  padding: 1vw;
+  padding: 3vw;
   grid-template-columns: auto auto auto auto auto auto;
   display: inline-grid;
   gap: 0px;
@@ -193,13 +204,20 @@ button:hover
 {
   background-color: rgba(0,0,0,0.5);
   font-size: 4vh;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  margin-top: 400px;
+  margin-right: 5%;
+  border-style: solid;
 }
 
 .info-body
 {
   background-color: rgba(0,0,0,0.5);
-  font-size: 2vh;
-  padding-bottom: 5vh;
+  font-size: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  margin-top: 10px;
+  margin-right: 5%;
+  border-style: solid;
 }
