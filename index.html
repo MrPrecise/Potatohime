@@ -1,193 +1,56 @@
 <!DOCTYPE html>
 <html>
-    
-<title>Potato Bingo</title>
-  <link rel="icon" type="image/x-icon" href="./raw.png">
+  <title>Potato Bingo</title>
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="./raw.png" />
 
-<head>
-	<link rel="stylesheet" href="BingoStyle.css">
-</head>
+  <head>
+    <link
+      rel="stylesheet"
+      href="BingoStyle.css" />
+  </head>
 
+  <body>
+    <div class="header">PotatoHimeRS's Bingo!</div>
 
+    <div
+      class="teams-column"
+      id="allTeams"></div>
 
-<body>
+    <div
+      class="Bingo-code"
+      id="Bingo-code">
+      Bingo Code: 5CUM3
+    </div>
 
-	<div class="header">PotatoHimeRS's Bingo!</div>
-	
-	<div class="teams-column">
-		<div class="team" id="t1">
-			<div class = "team-score" id="s1">15</div>
-			<button onclick="selectTeam(1)">Rimmington Railers</button>
-			<p class="clear">
-			<div class = "team-members hide" id="t1members">
-				NoPotatoSack<br>
-                george 36th<br>
-				1Pots<br>
-				arcReign<br>
-				Only Kits<br>
-                abhorsen2089 (replaced DefyJ)<br>
-				Diksin Cider<br>
-				GIMchompas<br>
-				Kjellandree<br>
-				Glutengirl
-			</div>
-		</div>
-		<div class="team" id="t2">
-			<div class = "team-score" id="s2">15</div>
-			<button onclick="selectTeam(2)">Unbelievably Idiotic Morons</button>
-			
-			<p class="clear">
-			<div class = "team-members hide" id="t2members">
-				pyretireiron<br>
-				Louisa<br>
-				LWShallan<br>
-				Smollay<br>
-				vagitarian3<br>
-				Char lotte<br>
-				dooomfox<br>
-				Remcave<br>
-				Icy Penguins<br>
-				Filthydane<br>
-				Snowboots000
-			</div>
-		</div>
-		<div class="team" id="t3">
-			<div class = "team-score" id="s3">15</div>
-			<button onclick="selectTeam(3)">Purple CumCumbers</button>
-			<p class="clear">
-			<div class = "team-members hide" id="t3members">
-				DarkMav1s<br>
-				DuckTrails<br>
-				gxgx55 (replaced KoMiSt)<br>
-				BundyOnDanny<br>
-				Cucco<br>
-				Name Me Mum<br>
-				Nerd Jp<br>
-				Extramint<br>
-				ferretgreen<br>
-				RegiGuthix<br>
-				osrsellie
-			</div>
-		</div>
-		<div class="team" id="t4">
-			<div class = "team-score" id="s4">15</div>
-			<button onclick="selectTeam(4)">Darkmeyer Doomers</button>
-			<p class="clear">
-			<div class = "team-members hide" id="t4members">
-				n3cromans3r<br>
-				Yarnbbyma<br>
-				Arcunos<br>
-				Toxcid<br>
-				Bad Writer<br>
-				Uim pher<br>
-				Thic N Meaty<br>
-				BiruAilo<br>
-				JuicedRadish<br>
-				Patrjck
-			</div>
-		</div>
-		<div class="team" id="t5">
-			<div class = "team-score" id="s5">15</div>
-			<button onclick="selectTeam(5)">CumDog Millionaires</button>
-			<p class="clear">
-			<div class = "team-members hide" id="t5members">
-				Spionks<br>
-				becs tasty<br>
-				Bastin101<br>
-				Sirbubanitus (replaced Undelivered)<br>
-				blemma<br>
-				Lietre<br>
-				Eggy CumFart<br>
-				Grey RS<br>
-				OneBucketMan<br>
-				laf warrulf<br>
-				Frigging Tony
-			</div>
-		</div>
-		<div class="team" id="t6">
-			<div class = "team-score" id="s6">15</div>
-			<button onclick="selectTeam(6)">Canifis Cornflakes</button>
-			<p class="clear">
-			<div class = "team-members hide" id="t6members">
-				PoundCaked<br>
-				Juri M<br>
-				SirBabbers<br>
-				CrankySquid<br>
-				Quacker<br>
-				hetdorp<br>
-				cumhaver<br>
-				Metal eh (replaced Talamantes)<br>
-				SurferEgg<br>
-				karvakaapio
-			</div>
-		</div>
+    <div
+      class="info-column"
+      id="info-column">
+      <div
+        class="info-title"
+        id="info-title">
+        Get one of each client in Mahogany Homes
+      </div>
+      <div
+        class="info-body"
+        id="info-body">
+        Screenshot yourself at every location noted on the wiki. 3 spots in
+        ardy, 3 in falador, 3 in hosidius and 3 in Varrock.
+      </div>
+    </div>
 
-	</div>
+    <div class="board-column">
+      <div
+        class="board"
+        id="picture-board"></div>
+    </div>
 
-    <div class="Bingo-code" id="Bingo-code">
-        Bingo Code: 5CUM3
-    
-         </div>
-
-
-	<div class="info-column" id="info-column">
-		<div class="info-title" id="info-title">Get one of each client in Mahogany Homes</div>
-		<div class="info-body" id="info-body">Screenshot yourself at every location noted on the wiki. 3 spots in ardy, 3 in falador, 3 in hosidius and 3 in Varrock.</div>
-	</div>
-
-	<div class="board-column">
-		<div class="board">
-			<div class="tile raw" id="i1"  onclick="showInfo(1)"> <img src="./images/1.png"> </div>
-			<div class="tile raw" id="i2"  onclick="showInfo(2)"> <img src="./images/2.png"> </div>
-			<div class="tile raw" id="i3"  onclick="showInfo(3)"> <img src="./images/3.png"> </div>
-			<div class="tile raw" id="i4"  onclick="showInfo(4)"> <img src="./images/4.png"> </div>
-			<div class="tile raw" id="i5"  onclick="showInfo(5)"> <img src="./images/5.png"> </div>
-			<div class="tile raw" id="i6"  onclick="showInfo(6)"> <img src="./images/6.png"> </div>
-
-			<div class="tile raw" id="i7"  onclick="showInfo(7)"> <img src="./images/7.png"> </div>
-			<div class="tile raw" id="i8"  onclick="showInfo(8)"> <img src="./images/8.png"> </div>
-			<div class="tile raw" id="i9"  onclick="showInfo(9)"> <img src="./images/9.png"> </div>
-			<div class="tile raw" id="i10" onclick="showInfo(10)"><img src="./images/10.png"></div>
-			<div class="tile raw" id="i11" onclick="showInfo(11)"><img src="./images/11.png"></div>
-			<div class="tile raw" id="i12" onclick="showInfo(12)"><img src="./images/12.png"></div>
-			
-			<div class="tile raw" id="i13" onclick="showInfo(13)"><img src="./images/13.png"></div>
-			<div class="tile raw" id="i14" onclick="showInfo(14)"><img src="./images/14.png"></div>
-			<div class="tile raw" id="i15" onclick="showInfo(15)"><img src="./images/15.png"></div>
-			<div class="tile raw" id="i16" onclick="showInfo(16)"><img src="./images/16.png"></div>
-			<div class="tile raw" id="i17" onclick="showInfo(17)"><img src="./images/17.png"></div>
-			<div class="tile raw" id="i18" onclick="showInfo(18)"><img src="./images/18.png"></div>
-			
-			<div class="tile raw" id="i19" onclick="showInfo(19)"><img src="./images/19.png"></div>
-			<div class="tile raw" id="i20" onclick="showInfo(20)"><img src="./images/20.png"></div>
-			<div class="tile raw" id="i21" onclick="showInfo(21)"><img src="./images/21.png"></div>
-			<div class="tile raw" id="i22" onclick="showInfo(22)"><img src="./images/22.png"></div>
-			<div class="tile raw" id="i23" onclick="showInfo(23)"><img src="./images/23.png"></div>
-			<div class="tile raw" id="i24" onclick="showInfo(24)"><img src="./images/24.png"></div>
-			
-			<div class="tile raw" id="i25" onclick="showInfo(25)"><img src="./images/25.png"></div>
-			<div class="tile raw" id="i26" onclick="showInfo(26)"><img src="./images/26.png"></div>
-			<div class="tile raw" id="i27" onclick="showInfo(27)"><img src="./images/27.png"></div>
-			<div class="tile raw" id="i28" onclick="showInfo(28)"><img src="./images/28.png"></div>
-			<div class="tile raw" id="i29" onclick="showInfo(29)"><img src="./images/29.png"></div>
-			<div class="tile raw" id="i30" onclick="showInfo(30)"><img src="./images/30.png"></div>
-			
-			<div class="tile raw" id="i31" onclick="showInfo(31)"><img src="./images/31.png"></div>
-			<div class="tile raw" id="i32" onclick="showInfo(32)"><img src="./images/32.png"></div>
-			<div class="tile raw" id="i33" onclick="showInfo(33)"><img src="./images/33.png"></div>
-			<div class="tile raw" id="i34" onclick="showInfo(34)"><img src="./images/34.png"></div>
-			<div class="tile raw" id="i35" onclick="showInfo(35)"><img src="./images/35.png"></div>
-			<div class="tile raw" id="i36" onclick="showInfo(36)"><img src="./images/36.png"></div>
-			
-		</div>
-	</div> 
-
-	<script src="scores.js"></script>
-	<script src="info.js"></script>
-
-
-
-</body>
-
-
+    <script src="js/importTeams.js"></script>
+    <script src="js/loadTeams.js"></script>
+    <script src="js/scores.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/loadImages.js"></script>
+  </body>
 </html>
