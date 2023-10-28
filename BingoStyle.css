@@ -1,208 +1,172 @@
-@font-face
-{
-  font-family: 'French_Fries';
+@font-face {
+  font-family: "French_Fries";
   src: url("French_Fries.ttf");
 }
 
 @font-face {
-  font-family: 'Runescape UF';
-  src: url("runescape_uf.ttf") format('truetype');
+  font-family: "Runescape UF";
+  src: url("runescape_uf.ttf") format("truetype");
 }
 
-
-body
-{
+body {
   margin: 0;
   background-color: black;
   color: #ffff00;
-  font-family: 'Runescape UF';
+  font-family: "Runescape UF";
   background-image: url(./images/Background5.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  text-shadow: 3px 3px black;  
-  
+  text-shadow: 3px 3px black;
 }
 
 p.clear {
   clear: both;
 }
 
-.header
-{
+.header {
   margin-bottom: 100px;
   font-size: 4vw;
-  font-family: 'Runescape UF';
+  font-family: "Runescape UF";
   padding: 10px;
   text-align: center;
   text-shadow: 3px 3px black;
-  background-color: rgba(0,0,0,0.5);
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-.Bingo-code
-{
-font-family: 'Runescape UF';
-font-size: 40px;
-text-shadow: 3px 3px black; 
-
+.Bingo-code {
+  font-family: "Runescape UF";
+  font-size: 40px;
+  text-shadow: 3px 3px black;
 }
-.teams-column
-{
-  
+.teams-column {
   float: left;
   margin-top: 200px;
   border-style: solid;
   width: auto;
-  
-  text-shadow: 3px 3px black; 
-  background-color: rgba(0,0,0,0.5);
-  
-  
+
+  text-shadow: 3px 3px black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.info-column
-{
+.info-column {
   background-image: url(./images/1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  
+
   float: right;
   width: 30%;
   height: 40vh;
   text-align: center;
   padding-top: 5vh;
-  text-shadow: 3px 3px black; 
+  text-shadow: 3px 3px black;
 }
 
-.board-column
-{
+.board-column {
   float: left;
   width: 40%;
 }
 
-
-
-@media screen and (max-width: 1000px)
-{
-  .teams-column, .board-column, .info-column
-  {
+@media screen and (max-width: 1000px) {
+  .teams-column,
+  .board-column,
+  .info-column {
     width: 100%;
-    
-  }    
+  }
 }
 
-button
-{
-  background-color:  transparent;
+button {
+  background-color: transparent;
   font-size: 4vh;
   padding: 0.5vw;
   padding-left: 2vw;
   border: none;
-  color:  #ffff00;
+  color: #ffff00;
   float: left;
-  font-family: 'Runescape UF';
-  transition:  0.25s;
+  font-family: "Runescape UF";
+  transition: 0.25s;
 }
 
-button:hover
-{
+button:hover {
   opacity: 0.7;
 }
 
-.team-score
-{
+.team-score {
   float: left;
   font-size: 4vh;
   padding: 0.5vw;
   padding-left: 2vw;
-  text-shadow: 3px 3px black; 
+  text-shadow: 3px 3px black;
 }
 
-.team-members
-{
-  
+.team-members {
   padding-left: 5vw;
   font-size: 2vh;
-  text-shadow: 3px 3px black; 
+  text-shadow: 3px 3px black;
 }
 
-.hide {display: none;}
+.hide {
+  display: none;
+}
 
-.board
-{
-  
+.board {
   right: 0;
   padding: 3vw;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   display: inline-grid;
   gap: 0px;
   /*grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;*/
 }
 
-.board-column .board img
-{
+.board-column .board img {
   width: 10vh;
   height: 10vh;
-
 }
 
-.tile
-{
+.tile {
   positon: relative;
   display: inline-block;
   aspect-ratio: 1;
   /*color: #D4AF37;*/
-  height:auto;
-  max-width:10vh;
-  max-height:10vh;
-  text-shadow: 3px 3px black;  
+  height: auto;
+  max-width: 10vh;
+  max-height: 10vh;
+  text-shadow: 3px 3px black;
 }
 
-.tile:hover
-{
+.tile:hover {
   opacity: 0.7;
   transition: 0.25s;
 }
 
-.tile .tiletxt
-{
+.tile .tiletxt {
   position: relative;
   opacity: 0.3;
   transition: 0.5s;
   text-align: center;
 }
 
-.tiletxt:hover
-{
-  opacity:  1;
+.tiletxt:hover {
+  opacity: 1;
 }
 
-.tile .tiletxt .text-align
-{
+.tile .tiletxt .text-align {
   position: absolute;
 }
 
-.raw
-{
+.raw {
   background-image: url(raw.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.cooked
-{
+.cooked {
   background-image: url(cooked.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
-.info-title
-{
-  background-color: rgba(0,0,0,0.5);
+.info-title {
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 4vh;
   padding-bottom: 1vh;
   padding-top: 1vh;
@@ -211,9 +175,8 @@ button:hover
   border-style: solid;
 }
 
-.info-body
-{
-  background-color: rgba(0,0,0,0.5);
+.info-body {
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 3vh;
   padding-bottom: 1vh;
   padding-top: 1vh;

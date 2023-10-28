@@ -1,5 +1,5 @@
 function loadImages() {
-  for (let i = 1; i <= 36; i++) {
+  for (let i = 1; i <= 25; i++) {
     let pictureHTML = `
         <div
         class="tile raw"
